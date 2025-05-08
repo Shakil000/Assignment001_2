@@ -102,3 +102,24 @@ const products = [
 ];
 
 console.log(getMostExpensiveProduct(products));
+
+// Problem 7: 
+enum Day{
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday
+}
+
+function getDayType(day: Day): string{
+  if(day === Day.Saturday || day === Day.Sunday){
+    return `The day is ${'Weekend'} day 🎉 Hurray!`
+  }
+  return `The day is ${"Weekday"}`
+}
+
+console.log(getDayType(Day.Monday));
+console.log(getDayType(Day.Sunday));
